@@ -1,0 +1,58 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="M031_malikoshhh.MainWindow"
+        Title="M031_malikoshhh"
+        Width="520" Height="480"
+        WindowStartupLocation="CenterScreen">
+    
+    <Window.Styles>
+        <Style Selector="Button">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="BorderBrush" Value="#CCCCCC"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+    </Window.Styles>
+    
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Матрица 3 × 5 -->
+        <UniformGrid Grid.Column="0"
+                     Columns="3" Rows="5"
+                     Width="300" Height="400"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center">
+
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+            <Button Content="" Width="80" Height="70" Margin="4"/>
+
+        </UniformGrid>
+
+        <!-- Кнопка Распознать справа по центру -->
+        <Button Grid.Column="1"
+                Content="РАСПОЗНАТЬ"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"
+                Width="120" Height="50"
+                Margin="20,0,0,0"
+                VerticalAlignment="Center"
+                FontSize="16"/>
+    </Grid>
+</Window>
